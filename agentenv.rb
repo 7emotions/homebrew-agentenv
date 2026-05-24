@@ -5,21 +5,21 @@
 class Agentenv < Formula
   desc "AI agent environment management CLI"
   homepage "https://github.com/7emotions/agentenv"
-  version "0.2.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/7emotions/agentenv/releases/download/v0.2.1/agentenv_0.2.1_Darwin_x86_64.tar.gz"
-      sha256 "2731058c98520375afdac63a4771c21ac9fcf54633991fcfc6fd95a4cc64805d"
+      url "https://github.com/7emotions/agentenv/releases/download/v0.4.0/agentenv_0.4.0_Darwin_x86_64.tar.gz"
+      sha256 "edda93b85bc46ded745c9515b0bddc80f0f73f51268080b24803ae931ac38422"
 
       define_method(:install) do
         bin.install "agentenv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/7emotions/agentenv/releases/download/v0.2.1/agentenv_0.2.1_Darwin_aarch64.tar.gz"
-      sha256 "c3c39445479fcd3b0e3fb6d24714a9dbe3550e770fe7400f34d58f65eb87f548"
+      url "https://github.com/7emotions/agentenv/releases/download/v0.4.0/agentenv_0.4.0_Darwin_aarch64.tar.gz"
+      sha256 "ef4629d9d85ee3c57100d2eb1fdb9c237a42cb43d6875a0183370a72b479e83c"
 
       define_method(:install) do
         bin.install "agentenv"
@@ -29,15 +29,15 @@ class Agentenv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/7emotions/agentenv/releases/download/v0.2.1/agentenv_0.2.1_Linux_x86_64.tar.gz"
-      sha256 "e00fb1c88290a7323519345f6b345225aaef70f1972c26b3c76fddbacbae0d95"
+      url "https://github.com/7emotions/agentenv/releases/download/v0.4.0/agentenv_0.4.0_Linux_x86_64.tar.gz"
+      sha256 "f5154650f284bff4fb50aa316f0481e68a24a49fe53eafd5c19468c0d249fbd6"
       define_method(:install) do
         bin.install "agentenv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/7emotions/agentenv/releases/download/v0.2.1/agentenv_0.2.1_Linux_aarch64.tar.gz"
-      sha256 "0b4b08669bb23ce5c9e8e8c333fc0ca11e1bf713f4cc517cb74f0b4d82bc14fd"
+      url "https://github.com/7emotions/agentenv/releases/download/v0.4.0/agentenv_0.4.0_Linux_aarch64.tar.gz"
+      sha256 "991ddeae4e7eb973ff2fe8304eb8074d42fbe3f3e94477be66a6e877e1a52c8e"
       define_method(:install) do
         bin.install "agentenv"
       end
