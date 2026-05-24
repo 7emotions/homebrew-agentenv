@@ -11,7 +11,7 @@ class Agentenv < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/7emotions/agentenv/releases/download/v0.4.0/agentenv_0.4.0_Darwin_x86_64.tar.gz"
-      sha256 "edda93b85bc46ded745c9515b0bddc80f0f73f51268080b24803ae931ac38422"
+      sha256 "67189e16a1e2762a0a36e14a65484a673d4dd163b4b3412bcd099f71bee643cb"
 
       define_method(:install) do
         bin.install "agentenv"
@@ -19,7 +19,7 @@ class Agentenv < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/7emotions/agentenv/releases/download/v0.4.0/agentenv_0.4.0_Darwin_aarch64.tar.gz"
-      sha256 "ef4629d9d85ee3c57100d2eb1fdb9c237a42cb43d6875a0183370a72b479e83c"
+      sha256 "7ab106f445269da73860c3bed4521709c1c0b6f30771168e537eb34167669a64"
 
       define_method(:install) do
         bin.install "agentenv"
@@ -30,14 +30,14 @@ class Agentenv < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/7emotions/agentenv/releases/download/v0.4.0/agentenv_0.4.0_Linux_x86_64.tar.gz"
-      sha256 "f5154650f284bff4fb50aa316f0481e68a24a49fe53eafd5c19468c0d249fbd6"
+      sha256 "68362be8c72e5dba246d069080334bb5715d8045e8a5ceaadaabd92dbc7085f9"
       define_method(:install) do
         bin.install "agentenv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/7emotions/agentenv/releases/download/v0.4.0/agentenv_0.4.0_Linux_aarch64.tar.gz"
-      sha256 "991ddeae4e7eb973ff2fe8304eb8074d42fbe3f3e94477be66a6e877e1a52c8e"
+      sha256 "af18ec2bcbe92d43947b81f78949d6c48291e204228130eec3c77ccf84b3782d"
       define_method(:install) do
         bin.install "agentenv"
       end
